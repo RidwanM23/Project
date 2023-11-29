@@ -1,0 +1,289 @@
+hr {
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #83d8a1;
+  color: white;
+  min-height: 3000px;
+}
+
+.navbar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  position: fixed;
+}
+
+.navbar-head .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+}
+
+.navbar-head .logo span {
+  color: #558b55;
+}
+
+.navbar-head .navbar a {
+  color: white;
+  justify-content: center;
+  display: block;
+  font-size: 1.6rem;
+  margin: 0 1rem;
+}
+
+.navbar-head .navbar a:hover {
+  color: #a6cf98;
+  transition: 1s;
+}
+
+.navbar-head .navbar a::after {
+  display: block;
+  padding-bottom: 0.6rem;
+  border-bottom: 0.1rem solid black;
+  content: "";
+  transform: scaleX(0);
+  transition: 0.5s linear;
+}
+
+.navbar-head .navbar a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-head .navbar-logo a:hover {
+  color: #a6cf98;
+  transition: 1s;
+}
+.navbar-head .navbar-logo a {
+  padding: 0.5rem;
+}
+
+#menu {
+  display: none;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("internet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(5, 231, 5) 102) 3%,
+    rgba(255, 255, 255, 0) 25%;
+}
+
+.hero .content {
+  padding: 1.5rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.3;
+}
+
+.hero .content h1 span {
+  color: #558b55;
+}
+
+.hero .content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  line-height: 1.3;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  mix-blend-mode: difference;
+  color: #3e4a51;
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #557c55;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.about,
+.menus {
+  padding: 10rem 7% 1.5rem;
+}
+
+.about h2,
+.menus h2,
+.work h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span,
+.menus h2 span,
+.work h2 span {
+  color: #557c55;
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #555843;
+  font-weight: 600;
+}
+
+.menus p,
+.work p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.menus h2,
+.work h2 {
+  margin-bottom: 2rem;
+}
+
+.corn {
+  display: flex;
+}
+
+.how {
+  margin-top: 100px;
+}
+
+/*Media 1*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* media 2*/
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar-head .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgb(73, 77, 82);
+    width: 30rem;
+    height: 100vh;
+    transition: 1s;
+  }
+
+  .navbar-head .navbar.active {
+    right: 0;
+  }
+
+  .navbar-head .navbar a {
+    color: #557c55;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar-head .navbar a::after {
+    transform-origin: 0 0;
+  }
+
+  .about .row {
+    display: flex;
+  }
+
+  .about .row .about-img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/*media 3*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+.we {
+  text-align: center;
+  padding: 10px;
+  width: 225px;
+  margin: 10px;
+  float: left;
+  margin-left: 23%;
+}
+.we1 {
+  text-align: center;
+  padding: 10px;
+  width: 225px;
+  margin: 10px;
+  float: left;
+  margin-left: 2%;
+}
