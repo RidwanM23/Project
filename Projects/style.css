@@ -307,6 +307,10 @@ ul{
   margin-left: 25px;
 }
 
+.client img{
+  max-height: 200px;
+}
+
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
