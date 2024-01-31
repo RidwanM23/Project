@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h2>nilai kamu <span id="nilai"></span><span id="her"></span></h2>
+        <h2>kamu <span id="kel"></span></h2>
+    <script>
+        var nilai = 20;
+        if (nilai >= 80)
+        {
+            document.getElementById('nilai').innerHTML = nilai;
+            document.getElementById('kel').innerHTML = " Roman Empire";
+        }
+        else {
+            document.getElementById('nilai').innerHTML = nilai;
+            document.getElementById('kel').innerHTML = "Kenapa main Ep Ep";
+        }
+        
+
+        switch(nilai){
+            case 100:
+                document.getElementById('her').innerHTML = "kamu hebat";
+        }
+    </script>
+</body>
+</html>
