@@ -8,34 +8,159 @@
 </head>
 <body>
     
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Matpel</th>
-            <th scope="col">nilai</th>
-            <th scope="col">Deskripsi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td><span id="np"></span></td>
-            <td><span id="pkn"></span></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td></td>
-            <td><span id="np1"></span></td>
-            <td><span id="pkn1"></span></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          <tr>
+  <table class="table table-borderless">
+		<tr>
+			<td>Nama Siswa</td>
+			<td>:</td>
+			<td id="nama"></td>
+			<td>Semester</td>
+			<td>:</td>
+			<td id="semester"></td>
+		</tr>
+		<tr>
+			<td>Kelas</td>
+			<td>:</td>
+			<td id="kelas"></td>
+			<td>Tahun Ajaran</td>
+			<td>:</td>
+			<td id="ta"></td>
+		</tr>
+		<tr>
+			<td>Program Studi</td>
+			<td>:</td>
+			<td id="ps"></td>
+		</tr>
+	</table>
+
+
+    <table class="table table-striped table-bordered border-dark">
+      <tr style="height: 10px;">
+        <th style="width: 30px;">NO</th>
+        <th>nama mapel</th>
+        <th style="width: 20px;"> Nilai</th>
+        <th>deskripsi</th>
+      </tr>
+      <tr>
+        <th rowspan="2">1</th>
+        <th rowspan="2">PKN</th>
+        <th><span id="np"></span></th>
+        <th><span id="pkn"></span></th>
+      </tr>
+      <tr>
+        <th><span id="np1"></span></th>
+        <th><span id="pkn1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">2</th>
+        <th rowspan="2">Sunda</th>
+        <th><span id="ns"></span></th>
+        <th><span id="sunda"></span></th>
+      </tr>
+      <tr>
+        <th><span id="ns1"></span></th>
+        <th><span id="sunda1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">3</th>
+        <th rowspan="2">Agama</th>
+        <th><span id="nag"></span></th>
+        <th><span id="agama"></span></th>
+      </tr>
+      <tr>
+        <th><span id="nag1"></span></th>
+        <th><span id="agama1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">4</th>
+        <th rowspan="2">Sejarah</th>
+        <th><span id="nse"></span></th>
+        <th><span id="sejarah"></span></th>
+      </tr>
+      <tr>
+        <th><span id="nse1"></span></th>
+        <th><span id="sejarah1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">5</th>
+        <th rowspan="2">Inggris</th>
+        <th><span id="ni"></span></th>
+        <th><span id="inggris"></span></th>
+      </tr>
+      <tr>
+        <th><span id="ni1"></span></th>
+        <th><span id="inggris1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">6</th>
+        <th rowspan="2">Informatika</th>
+        <th><span id="nif"></span></th>
+        <th><span id="infor"></span></th>
+      </tr>
+      <tr>
+        <th><span id="nif1"></span></th>
+        <th><span id="informatika1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">7</th>
+        <th rowspan="2">Senbud</th>
+        <th><span id="nis"></span></th>
+        <th><span id="senbud"></span></th>
+      </tr>
+      <tr>
+        <th><span id="nis1"></span></th>
+        <th><span id="senbud1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">8</th>
+        <th rowspan="2">DDPK</th>
+        <th><span id="nd"></span></th>
+        <th><span id="ddpk"></span></th>
+      </tr>
+      <tr>
+        <th><span id="nd1"></span></th>
+        <th><span id="ddpk1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">9</th>
+        <th rowspan="2">Ipas</th>
+        <th><span id="nip"></span></th>
+        <th><span id="ipas"></span></th>
+      </tr>
+      <tr>
+        <th><span id="nip1"></span></th>
+        <th><span id="ipas1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">10</th>
+        <th rowspan="2">Matematika</th>
+        <th><span id="nm"></span></th>
+        <th><span id="matematika"></span></th>
+      </tr>
+      <tr>
+        <th><span id="nm1"></span></th>
+        <th><span id="matematika1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">11</th>
+        <th rowspan="2">Indonesia</th>
+        <th><span id="nib"></span></th>
+        <th><span id="indo"></span></th>
+      </tr>
+      <tr>
+        <th><span id="nib1"></span></th>
+        <th><span id="indo1"></span></th>
+      </tr>
+      <tr>
+        <th rowspan="2">12</th>
+        <th rowspan="2">PJOK</th>
+        <th><span id="npo"></span></th>
+        <th><span id="pjok"></span></th>
+      </tr>
+      <tr>
+        <th><span id="npo1"></span></th>
+        <th><span id="pjok1"></span></th>
+      </tr>
+    </table>
           
 
     <script src="main.js"></script>

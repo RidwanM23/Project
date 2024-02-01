@@ -8,8 +8,8 @@
     <body>
         <h2>nilai kamu <span id="nilai"></span><span id="her"></span></h2>
         <h2>kamu <span id="kel"></span></h2>
-    <script>
-        var nilai = 20;
+    <script src="switch.js">
+        var nilai = 100;
         if (nilai >= 80)
         {
             document.getElementById('nilai').innerHTML = nilai;
@@ -22,7 +22,7 @@
         
 
         switch(nilai){
-            case 100:
+            case nilai <= 100:
                 document.getElementById('her').innerHTML = "kamu hebat";
         }
     </script>
